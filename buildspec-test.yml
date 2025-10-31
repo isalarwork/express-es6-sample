@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Install deps for tests"
+      - npm ci
+  build:
+    commands:
+      - echo "Run tests"
+      - npm test
+reports:
+  jest:
+    files:
+      - test-results/*.xml
+    file-format: JUNITXML
+    base-directory: .
