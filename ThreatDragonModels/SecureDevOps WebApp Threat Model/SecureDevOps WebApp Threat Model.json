@@ -2,15 +2,25 @@
   "version": "2.5.0",
   "summary": {
     "title": "SecureDevOps WebApp Threat Model",
-    "owner": "",
-    "description": "",
+    "owner": "Salar Haider",
+    "description": "The system consists of three main components: User Interface, Web Application, and Database. The user interacts through the UI, which communicates with the Web App for processing and data handling, while the Web App connects securely to the Database for storage and retrieval.",
     "id": 0
   },
   "detail": {
     "contributors": [],
-    "diagrams": [],
-    "diagramTop": 0,
-    "reviewer": "",
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Main WebApp Data Flow",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.5.0",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "ISEC6000 Reviewer",
     "threatTop": 0
   }
 }
