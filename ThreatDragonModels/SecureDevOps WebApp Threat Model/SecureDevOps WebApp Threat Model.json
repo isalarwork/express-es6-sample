@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "0c9ab64a-8805-4d17-a89c-07f1dac14d34",
             "zIndex": -1,
+            "id": "0c9ab64a-8805-4d17-a89c-07f1dac14d34",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary 1: Internet ↔ Web Application",
@@ -59,8 +59,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "2d3de79c-b68d-4423-8262-4ca244b45ef0",
             "zIndex": -1,
+            "id": "2d3de79c-b68d-4423-8262-4ca244b45ef0",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary 2: Application ↔ Database",
@@ -90,6 +90,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -173,7 +174,6 @@
               ]
             },
             "id": "b066db72-b567-41fa-a62a-40ab57fa568d",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User Interface UI",
@@ -239,6 +239,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -322,7 +323,6 @@
               ]
             },
             "id": "1735ba2c-c9f3-4cb7-ac80-8e77f8f9680f",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -420,6 +420,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -503,7 +504,6 @@
               ]
             },
             "id": "17caf101-fa83-478f-9c3d-e7015631d4c8",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Database",
@@ -565,13 +565,6 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
